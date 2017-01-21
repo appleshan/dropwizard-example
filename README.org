@@ -1,0 +1,11 @@
+#+TITLE: dropwizard 的 helloworld example
+
+* run
+可以将 HelloWorldApplication 类​​作为一个主程序来运行（右键点击>运行方式> Java应用程序），这将启动嵌入式Jetty容器，我们
+可以看到程序在 http://localhost:8080/ 里运行。
+
+$ curl http://localhost:8080/hello-world
+{"id":1,"content":"Hello, Stranger!"}
+
+$ curl http://localhost:8080/hello-world?name=appleshan
+{"id":2,"content":"Hello, appleshan!"}
